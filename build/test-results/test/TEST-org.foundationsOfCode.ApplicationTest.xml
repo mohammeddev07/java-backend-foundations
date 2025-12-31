@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.foundationsofcode.ApplicationTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-12-31T12:20:58.535Z" hostname="Mohammeds-MBP.attlocal.net" time="0.008">
+  <properties/>
+  <testcase name="calculateTotalValueWithEmptyInventory()" classname="org.foundationsofcode.ApplicationTest" time="0.004"/>
+  <testcase name="calculateTotalValueWithDuplicateItems()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="addedItemsAreRetrievable()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="priceRetrievalForKnownItem()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="priceRetrievalForUnknownItemReturnsZero()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="addingItemsIncreasesInventorySize()" classname="org.foundationsofcode.ApplicationTest" time="0.001"/>
+  <testcase name="regularItemThresholdBelow100()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="calculateTotalValueWithSingleItem()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="premiumItemThresholdAt100()" classname="org.foundationsofcode.ApplicationTest" time="0.001"/>
+  <testcase name="calculateTotalValueWithMultipleItems()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <testcase name="inventoryStartsEmpty()" classname="org.foundationsofcode.ApplicationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
