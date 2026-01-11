@@ -15,7 +15,7 @@ public class Application {
     private static final Map<String, Double> priceCatalog = new HashMap<>();
     private static final InventoryService inventoryService = new InventoryService(priceCatalog);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Logger logger = Logger.getLogger(Application.class.getName());
         logger.info("Hello and welcome!");
@@ -45,6 +45,22 @@ public class Application {
         // 5. Logic demonstration: Calculate total value
         double totalValue = inventoryService.calculateTotalValue(inventory);
         logger.log(Level.INFO, "Total Inventory Value: ${0}", totalValue);
+
+        System.out.println("--- Starting Healthy Memory Demo ---");
+        List<byte[]> storage = new ArrayList<>();
+
+        for (int i = 1; i <= 1000; i++) {
+            byte[] clutter = new byte[1024 * 1024]; // 1MB
+            storage.add(clutter);
+
+            // EVERY 50MB, WE "CLEAN THE ROOM"
+            if (i % 50 == 0) {
+                System.out.println("Cleaning memory at " + i + "MB...");
+                storage.clear(); // This makes the 50MB unreachable!
+            }
+
+            Thread.sleep(50);
+        }
 
     }
 
